@@ -20,3 +20,16 @@ The `.nojekyll` file keeps the plain HTML and CSS unchanged during deployment.
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
+
+## 网站设计 / Website design
+
+网站使用 App 的浅紫、暖白与棕色文字，沿用圆体、小猫和毛线插画。
+中英文页面均为静态 HTML；`site.js` 仅用于计数器演示及轻量入场动效，不保存或发送访问数据。
+The site follows the app’s lavender, warm paper, rounded type, and original illustrations.
+Both languages use static HTML. `site.js` powers a row-counter demo and light entrance motion without storing or sending visitor data.
+
+### 字体 / Fonts
+
+`assets/fonts/` 包含供本网站使用的寒蝉全圆体子集，已将字体家族重命名为 `KnitMemo Web Round`。原字体版权 © 2023 ChillType，按同目录的 SIL Open Font License 分发。
+更新中文文案时需重新生成字体子集，覆盖新增字符。
+The web fonts are subsets of ChillRoundF, renamed to `KnitMemo Web Round`, © 2023 ChillType, distributed under the included SIL Open Font License. Regenerate the subsets when adding Chinese characters.

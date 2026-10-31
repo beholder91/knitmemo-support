@@ -1,6 +1,69 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="KnitMemo support, getting started, and backup help."><title>Support · KnitMemo</title><link rel="stylesheet" href="style.css"></head>
-<body><header><a class="brand" href="en.html">KnitMemo<span>织记</span></a><nav aria-label="Site navigation"><a href="privacy-en.html">Privacy</a><a href="index.html" lang="zh-Hans">简体中文</a></nav></header><main><section class="hero"><div class="eyebrow">KNITMEMO SUPPORT</div><h1>A little record.<br>Every stitch.</h1><p class="lead">A local journal for knitting and crochet. Organize your yarn, keep track of progress, and look back on the things you made.</p></section>
-<div class="grid"><section class="card"><h2>Start your journal</h2><ol><li>Add yarn, colors, and photos to Yarn Stash.</li><li>Tap “+” to create a project, choose yarn, and set a counter unit.</li><li>Open the project to count and add progress photos or a short note.</li><li>Finish it with a photo, completion date, and yarn usage.</li></ol></section><section class="card tint"><h2>Keep your records safe</h2><p>Choose Settings → Export ZIP Backup to save your records, photos, and PDFs together.</p><p>Save the ZIP outside the app before changing devices or removing the app. To restore it, choose Import Backup in Settings.</p><p class="small">Import creates copies without overwriting existing records. KnitMemo does not automatically upload or sync across devices.</p></section></div>
-<section class="card"><h2>Common questions</h2><details><summary>Are my records or photos uploaded?</summary><p>No. The app stores content on your device and has no accounts, ads, or analytics services. Copies leave the app only when you choose to export or share them to a location or service.</p></details><details><summary>How do I change the language?</summary><p>Open Settings from the journal page and choose English or 简体中文. The interface updates immediately.</p></details><details><summary>How do I view a PDF pattern?</summary><p>Select a PDF from Files when creating or editing a project. Once saved, you can open it from the project.</p></details><details><summary>What if a photo is missing or an import fails?</summary><p>Keep the original photos and your backup. Check that the files open in Photos or Files and that your device has available space. Avoid uninstalling the app to troubleshoot. If the issue continues, contact us below.</p></details></section>
-<section class="card tint"><h2>Contact the developer</h2><p>For help or suggestions, open a GitHub Issue (a GitHub account is required). Include the app version, device model, iOS version, and steps to reproduce the issue.</p><a class="button" href="https://github.com/beholder91/knitmemo-support/issues/new">Get support</a><p class="small">Issues are public. Do not post private photos, full backups, passwords, or other sensitive content.</p></section></main><footer><span>KnitMemo · 织记</span><div><a href="en.html">Support</a><a href="privacy-en.html">Privacy Policy</a><a href="https://github.com/beholder91/knitmemo-support/issues">GitHub Issues</a></div></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Keep your yarn, your progress, and everything you make together.">
+  <meta name="theme-color" content="#F2EEFA">
+  <title>KnitMemo · A home for every stitch</title>
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="preload" href="assets/fonts/knitmemo-round-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="en.html" aria-label="KnitMemo home"><img src="assets/app-icon.png" alt="" width="40" height="40"><span>KnitMemo</span></a>
+    <nav aria-label="Site navigation">
+      <a class="feature-nav" href="en.html#features">Features</a>
+      <a href="en.html#help">Help</a>
+      <a href="privacy-en.html">Privacy</a>
+      <a href="index.html" lang="zh-Hans">简体中文</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-cat" src="assets/mochi.png" alt="" width="88" height="95">
+      <h1 id="hero-title">A home for<br>every stitch</h1>
+      <p>Keep your yarn, your progress, and everything you make together.</p>
+      <div class="hero-actions"><a class="button" href="#features">Explore features</a><a class="text-action" href="#help">Help & feedback</a></div>
+    </section>
+    <section class="features" id="features" aria-labelledby="features-title">
+      <h2 class="section-title" id="features-title">From yarn to finished project</h2>
+      <article class="feature yarn-feature reveal">
+        <div class="feature-copy"><h3>Your yarn, all together</h3><p>Photos, colors, and materials in one place. Find the yarn for whatever comes next.</p></div>
+        <img class="feature-art yarn-art" src="assets/yarn.png" width="240" height="240" alt="" loading="lazy">
+      </article>
+      <article class="feature counter-feature reveal">
+        <div class="feature-copy"><h3>Pick up where<br>you left off</h3><p>Count rows and stitches as you go. Add a photo to remember today’s progress.</p></div>
+        <div class="counter-demo" data-ui>
+          <span class="counter-label">Rows</span>
+          <output id="row-count" aria-live="polite" aria-atomic="true">24</output>
+          <div class="counter-actions"><button type="button" id="subtract-row" aria-label="Subtract one row">−</button><button type="button" id="add-row" aria-label="Add one row">+</button></div>
+          <span class="demo-label">Give it a try</span>
+        </div>
+      </article>
+      <article class="feature finish-feature reveal">
+        <div class="feature-copy"><h3>Keep what you create</h3><p>Save the finished piece and the yarn you used. Look back on everything along the way.</p></div>
+        <img class="feature-art sweater-art" src="assets/sweater.png" width="240" height="240" alt="" loading="lazy">
+      </article>
+    </section>
+    <section class="help-section" id="help" aria-labelledby="help-title">
+      <h2 class="section-title" id="help-title">A little help</h2>
+      <div class="questions">
+      <details><summary>Where do I start?<span aria-hidden="true" class="expand"></span></summary><p>Add your yarn in Yarn Stash, then tap “+” to create a project and start your journal.</p></details>
+      <details><summary>How do I back up or change devices?<span aria-hidden="true" class="expand"></span></summary><p>Export a ZIP backup in Settings. On your other device, open KnitMemo and choose Import Backup.</p></details>
+      <details><summary>Can I add PDF patterns?<span aria-hidden="true" class="expand"></span></summary><p>Yes. Import a PDF when creating a project or editing its details, then open it from the project.</p></details>
+      <details><summary>How do I change the language?<span aria-hidden="true" class="expand"></span></summary><p>Open Settings → App Language and choose English or 简体中文.</p></details>
+      </div>
+    </section>
+    <section class="contact-section reveal" aria-labelledby="contact-title">
+      <h2 id="contact-title">Help shape KnitMemo</h2>
+      <p>Something not working, or something you’d love to see? Tell me about it.</p>
+      <a class="button" href="https://github.com/beholder91/knitmemo-support/issues/new">Leave a GitHub message</a>
+    </section>
+  </main>
+  <footer class="site-footer wrap"><a class="footer-brand" href="en.html">KnitMemo</a><div><a href="privacy-en.html">Privacy policy</a><a href="https://github.com/beholder91/knitmemo-support/issues">GitHub</a></div></footer>
+</body>
+</html>
